@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     section.setAttribute('class', 'row');
     board.appendChild(section);
     section.addEventListener('click', () => {
-      section.style.backgroundColor = 'red';
+      section.style.backgroundColor = getRandomColor();
     });
     for (j=0; j<columns; j++) {
       const section = document.createElement('div');
