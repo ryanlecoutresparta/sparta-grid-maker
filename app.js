@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     section.addEventListener('click', () => {
       section.style.backgroundColor = getRandomColor();
     });
+    section.addEventListener('mousedown', () => {
+        section.style.backgroundColor = getRandomColor();
+      });
     for (j=0; j<columns; j++) {
       const section = document.createElement('div');
       section.setAttribute('class', 'col');
@@ -18,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
       section.addEventListener('click', () => {
         section.style.backgroundColor = getRandomColor();
       });
-    }
+      section.addEventListener('mousedown', () => {
+          section.style.backgroundColor = getRandomColor();
+        });
+      };
     j = 0;
   }
 
